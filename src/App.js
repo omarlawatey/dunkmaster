@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Header } from './components';
-import { Home } from './pages';
+import { Home, Login } from './pages';
 
 const App = () => {
   return (
@@ -11,6 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/pets" element={'pets'} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </div>
   );

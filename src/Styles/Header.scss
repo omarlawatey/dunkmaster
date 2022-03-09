@@ -1,0 +1,63 @@
+a {
+  text-decoration: none;
+}
+
+.navbar-brand {
+  width: 10%;
+}
+
+.nav-link {
+  a {
+    transition: color 500ms;
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  &:hover {
+    a {
+      transition: color 500ms;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  &.active {
+    a {
+      transition: color 500ms;
+      color: #fff;
+    }
+  }
+}
+
+.login-icon {
+  a {
+    display: block;
+    width: 20px;
+
+    svg {
+      height: 1.6em;
+      width: 1.6em;
+
+      &:nth-child(1) {
+        transition: fill 500ms;
+        fill: rgba(255, 255, 255, 0.55);
+      }
+    }
+  }
+
+  &:hover {
+    a svg {
+      &:nth-child(1) {
+        transition: fill 500ms;
+        fill: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+
+  &.active {
+    a svg {
+      &:nth-child(1) {
+        transition: fill 500ms;
+        fill: #fff;
+      }
+    }
+  }
+}
