@@ -6,45 +6,42 @@ a {
   width: 10%;
 }
 
+header {
+  position: fixed;
+  width: 100vw;
+}
+
 .nav-link {
-  a {
-    transition: color 500ms;
-    color: rgba(255, 255, 255, 0.55);
-  }
+  transition: color 500ms;
+  color: rgba(255, 255, 255, 0.55);
 
   &:hover {
-    a {
-      transition: color 500ms;
-      color: rgba(255, 255, 255, 0.8);
-    }
+    transition: color 500ms;
+    color: rgba(255, 255, 255, 0.8);
   }
 
   &.active {
-    a {
-      transition: color 500ms;
-      color: #fff;
-    }
+    transition: color 500ms;
+    color: #fff;
   }
 }
 
 .login-icon {
-  a {
-    display: block;
-    width: 20px;
+  display: block;
+  width: 20px;
 
-    svg {
-      height: 1.6em;
-      width: 1.6em;
+  svg {
+    height: 1.6em;
+    width: 1.6em;
 
-      &:nth-child(1) {
-        transition: fill 500ms;
-        fill: rgba(255, 255, 255, 0.55);
-      }
+    &:nth-child(1) {
+      transition: fill 500ms;
+      fill: rgba(255, 255, 255, 0.55);
     }
   }
 
   &:hover {
-    a svg {
+    svg {
       &:nth-child(1) {
         transition: fill 500ms;
         fill: rgba(255, 255, 255, 0.8);
@@ -53,7 +50,7 @@ a {
   }
 
   &.active {
-    a svg {
+    svg {
       &:nth-child(1) {
         transition: fill 500ms;
         fill: #fff;

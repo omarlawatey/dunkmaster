@@ -4,12 +4,12 @@ import { FaYoutube, FaDiscord, FaTwitch } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import '../Styles/Footer.scss';
 
-const Footer = () => {
+const Footer = ({ setActiveIndex }) => {
   return (
     <div className="footer">
       <div className="upper-footer">
         <div className="footer-logo">
-          <Link to="/">
+          <Link to="/" onClick={() => setActiveIndex(0)}>
             <img
               src="https://4m4you.com/wp-content/uploads/2020/06/logo-placeholder.png"
               alt="logo"
