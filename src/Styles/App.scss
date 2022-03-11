@@ -1,0 +1,21 @@
+.App .page {
+  padding-top: 77px;
+}
+
+@media (max-width: 1400px) and (min-width: 1200px) {
+  .App .page {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .App .page {
+    padding-top: 63px;
+  }
+}
+
+@media (max-width: 991px) {
+  .App .page {
+    padding-top: 55px;
+  }
+}

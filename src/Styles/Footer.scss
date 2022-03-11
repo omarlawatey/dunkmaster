@@ -1,0 +1,169 @@
+.footer {
+  border-top: 0.5px solid rgba(33, 37, 41, 25%);
+  background-color: rgb(13, 17, 23);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .upper-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 20px;
+
+    .footer-logo {
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      min-width: 110px;
+      max-width: 275px;
+    }
+
+    .social-media {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        width: 20%;
+        min-width: 50px;
+        max-width: 200px;
+
+        &:hover {
+          li {
+            transition: all 0.3s;
+            transform: scale(0.8);
+          }
+        }
+
+        li {
+          transition: all 0.3s;
+          list-style: none;
+          position: relative;
+
+          svg {
+            transition: all 0.3s;
+            color: rgb(73, 79, 85);
+            height: 2.3em;
+            width: 2.3em;
+
+            &:hover {
+              transform: scale(1.7);
+            }
+          }
+
+          &::after {
+            content: '';
+            transition: all 0.3s;
+            // font-size: 6px;
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 50%;
+            width: 0%;
+            overflow: hidden;
+            word-wrap: normal;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          &:hover {
+            &::after {
+              transition: all 0.3s;
+              top: 150%;
+              width: 200%;
+            }
+          }
+        }
+
+        .youtube-icon {
+          svg:hover {
+            transition: all 0.3s;
+            color: #f00;
+          }
+
+          &::after {
+            content: 'YouTube';
+          }
+        }
+
+        .discord-icon {
+          svg:hover {
+            transition: all 0.3s;
+            color: #4d60ea;
+          }
+          &::after {
+            content: 'Discord';
+          }
+        }
+
+        .twitch-icon {
+          svg:hover {
+            transition: all 0.3s;
+            color: #8a42f2;
+          }
+
+          &::after {
+            content: 'Twitch';
+          }
+        }
+      }
+    }
+  }
+
+  hr {
+    background-color: #21262d;
+    opacity: 1;
+    margin: 2rem 0;
+    height: 1px;
+  }
+
+  .copy-rights {
+    text-align: center;
+    color: lightgray;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer {
+    .upper-footer {
+      width: 100%;
+
+      .footer-logo {
+        width: 30%;
+        min-width: 50px;
+        max-width: 200px;
+      }
+
+      .social-media {
+        width: 100%;
+
+        ul {
+          width: 50%;
+
+          li {
+            a {
+              svg {
+                height: clamp(29px, 3.36vw, 37px);
+                width: clamp(29px, 3.36vw, 37px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .copy-rights {
+      font-size: clamp(10px, 1.5vw, 16px);
+    }
+  }
+}
