@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Footer, Header } from './components';
-import { Home, Login, Pets } from './pages';
+import { Home, Login, Pets, Ranks } from './pages';
 import './Styles/App.scss';
 import { useEffect, useMemo, useState } from 'react';
 
@@ -50,6 +50,7 @@ const App = () => {
       />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/ranks" element={<Ranks />} />
         <Route path="/pets" element={<Pets />} />
         <Route path="/login" element={<Login />} />
       </Routes>
