@@ -37,8 +37,8 @@
         min-width: 50px;
         max-width: 200px;
 
-        &:hover {
-          li {
+        li.unfocused {
+          svg {
             transition: all 0.3s;
             transform: scale(0.8);
           }
@@ -54,9 +54,11 @@
             color: rgb(73, 79, 85);
             height: 2.3em;
             width: 2.3em;
+          }
 
-            &:hover {
-              transform: scale(1.7);
+          &.focused {
+            svg {
+              transform: scale(1.4);
             }
           }
 
@@ -69,25 +71,32 @@
             position: absolute;
             top: 50%;
             width: 0%;
+            max-height: 0;
+            opacity: 0;
             overflow: hidden;
             word-wrap: normal;
             left: 50%;
             transform: translateX(-50%);
           }
 
-          &:hover {
+          &.focused {
             &::after {
               transition: all 0.3s;
               top: 150%;
               width: 200%;
+              opacity: 1;
+              height: auto;
+              max-height: 100px;
             }
           }
         }
 
         .youtube-icon {
-          svg:hover {
-            transition: all 0.3s;
-            color: #f00;
+          &.focused {
+            svg {
+              transition: all 0.3s;
+              color: #f00;
+            }
           }
 
           &::after {
@@ -96,9 +105,11 @@
         }
 
         .discord-icon {
-          svg:hover {
-            transition: all 0.3s;
-            color: #4d60ea;
+          &.focused {
+            svg {
+              transition: all 0.3s;
+              color: #4d60ea;
+            }
           }
           &::after {
             content: 'Discord';
@@ -106,9 +117,11 @@
         }
 
         .twitch-icon {
-          svg:hover {
-            transition: all 0.3s;
-            color: #8a42f2;
+          &.focused {
+            svg {
+              transition: all 0.3s;
+              color: #8a42f2;
+            }
           }
 
           &::after {

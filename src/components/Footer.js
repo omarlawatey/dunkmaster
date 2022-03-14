@@ -18,7 +18,27 @@ const Footer = ({ setActiveIndex }) => {
         </div>
         <div className="social-media">
           <ul>
-            <li className="youtube-icon">
+            <li
+              className="youtube-icon social-media-icon"
+              onMouseOver={e => {
+                document
+                  .querySelectorAll('.social-media-icon')
+                  .forEach(item => {
+                    item.classList.remove('focused');
+                    item.classList.add('unfocused');
+                  });
+                e.currentTarget.classList.add('focused');
+                e.currentTarget.classList.remove('unfocused');
+              }}
+              onMouseOut={() => {
+                document
+                  .querySelectorAll('.social-media-icon')
+                  .forEach(item => {
+                    item.classList.remove('focused');
+                    item.classList.remove('unfocused');
+                  });
+              }}
+            >
               <a
                 href="https://www.youtube.com/channel/UCCLnQIRBkqnsRAqpp-6s91g"
                 target="_blank"
@@ -27,7 +47,27 @@ const Footer = ({ setActiveIndex }) => {
                 <FaYoutube />
               </a>
             </li>
-            <li className="discord-icon">
+            <li
+              className="discord-icon social-media-icon"
+              onMouseOver={e => {
+                document
+                  .querySelectorAll('.social-media-icon')
+                  .forEach(item => {
+                    item.classList.remove('focused');
+                    item.classList.add('unfocused');
+                  });
+                e.currentTarget.classList.add('focused');
+                e.currentTarget.classList.remove('unfocused');
+              }}
+              onMouseOut={() => {
+                document
+                  .querySelectorAll('.social-media-icon')
+                  .forEach(item => {
+                    item.classList.remove('focused');
+                    item.classList.remove('unfocused');
+                  });
+              }}
+            >
               <a
                 href="https://discord.gg/dunks"
                 target="_blank"
@@ -36,7 +76,27 @@ const Footer = ({ setActiveIndex }) => {
                 <FaDiscord />
               </a>
             </li>
-            <li className="twitch-icon">
+            <li
+              className="twitch-icon social-media-icon"
+              onMouseOver={e => {
+                document
+                  .querySelectorAll('.social-media-icon')
+                  .forEach(item => {
+                    item.classList.remove('focused');
+                    item.classList.add('unfocused');
+                  });
+                e.currentTarget.classList.add('focused');
+                e.currentTarget.classList.remove('unfocused');
+              }}
+              onMouseOut={() => {
+                document
+                  .querySelectorAll('.social-media-icon')
+                  .forEach(item => {
+                    item.classList.remove('focused');
+                    item.classList.remove('unfocused');
+                  });
+              }}
+            >
               <a
                 href="https://www.twitch.tv/lucife_ae"
                 target="_blank"

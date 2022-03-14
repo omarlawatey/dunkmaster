@@ -1,0 +1,53 @@
+.welcome-section {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  padding-top: 200px;
+  background: url('../utils/images/5701939.jpg');
+  background-size: cover;
+  background-position: center;
+
+  div {
+    position: sticky;
+    z-index: 0;
+
+    h1 {
+      color: #282828;
+      font-family: 'Cairo', sans-serif !important;
+      font-size: 72px;
+    }
+
+    p {
+      font-size: 43px;
+      font-family: 'Cairo', sans-serif !important;
+      letter-spacing: 2.6px;
+      text-align: center;
+    }
+  }
+}
+
+.server-details {
+  .server-info {
+    position: static;
+
+    .list-group {
+      .list-group-item {
+        position: static;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .welcome-section div {
+    h1 {
+      font-size: clamp(25px, 15vw, 56px);
+    }
+
+    p {
+      font-size: clamp(15px, 10vw, 35px);
+    }
+  }
+}
