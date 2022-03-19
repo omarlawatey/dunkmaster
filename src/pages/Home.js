@@ -45,7 +45,7 @@ const Home = () => {
               <Card.Link
                 onClick={e => {
                   e.preventDefault();
-                  copyToClipboard('213.136.84.233:25669');
+                  copyToClipboard('mc.dunk-master.com');
                 }}
               >
                 Copy Server IP

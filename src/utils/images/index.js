@@ -1,7 +1,25 @@
 import dragonRank from './dragon-rank.png';
 import maouRank from './maou-rank1.png';
 import ninjaRank from './ninja-rank.png';
+import breakSpawner from './Ranks/breakSpawner.gif';
+import particles from './Ranks/particles.gif';
+import feedHeal from './Ranks/feed-heal.gif';
+import weather from './Ranks/weather.gif';
+import glow from './Ranks/glow.gif';
+import daycycle from './Ranks/daycycle.gif';
+import fixcommand from './Ranks/fixcommand.gif';
+import enchanted from './Ranks/enchanted.gif';
+import bossset from './Ranks/bossset.png';
 
 export const dragonImage = dragonRank;
 export const maouRankImage = maouRank;
 export const ninjaRankImage = ninjaRank;
+export const BreakSpawnerGif = breakSpawner;
+export const particlesGif = particles;
+export const feedHealGif = feedHeal;
+export const weatherGif = weather;
+export const glowPng = glow;
+export const daycCycleGif = daycycle;
+export const fixCommandGif = fixcommand;
+export const enchantedGif = enchanted;
+export const bossSetPng = bossset;

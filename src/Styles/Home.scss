@@ -32,6 +32,12 @@
   .server-info {
     position: static;
 
+    .card-body {
+      .card-link {
+        cursor: pointer;
+      }
+    }
+
     .list-group {
       .list-group-item {
         position: static;
